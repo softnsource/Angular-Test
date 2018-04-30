@@ -1,0 +1,35 @@
+<div class="row">
+
+<form class="md-12" (ngSubmit)="onSubmit()" [formGroup]="form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">col1</label>
+      <input [formControl]="col1" type="text" class="form-control" id="col1" placeholder="col1"   required>
+      <div *ngIf="col1.invalid && (col1.dirty || col1.touched)" class="alert alert-danger">
+      
+        <div *ngIf="col1.errors.required">
+          col1 is required.
+        </div>
+      
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">col2</label>
+      <input type="text" [formControl]="col2" class="form-control" id="inputPassword4" placeholder="col2">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">col3</label>
+      <input type="text" [formControl]="col3" class="form-control" id="inputEmail4" placeholder="col3">
+    </div>
+  
+  </div>
+ 
+  
+
+  <button type="submit" class="btn btn-primary">
+    Save
+  </button>
+</form>
+</div>

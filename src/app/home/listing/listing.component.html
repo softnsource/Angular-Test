@@ -1,0 +1,23 @@
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Col1</th>
+        <th scope="col">Col2</th>
+        <th scope="col">Col3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let testdata of TestDataList">
+      <th scope="row">{{testdata.id}}</th>
+      <td>{{testdata.col1}}</td>
+      <td>{{testdata.col2}}</td>
+      <td>{{testdata.col3}}</td>
+      </tr>
+     
+     
+     
+    </tbody>
+  </table>
+</div>

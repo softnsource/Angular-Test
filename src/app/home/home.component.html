@@ -1,0 +1,10 @@
+<div class="container">
+<div *ngIf="formType=='list'">
+  <div class="float-right">
+  <button class=" btn btn-primary " (click)="addNew()">Add new</button>
+  </div>
+<app-listing ></app-listing>
+</div>
+ 
+  <app-form *ngIf="formType=='form'"></app-form>
+</div>
